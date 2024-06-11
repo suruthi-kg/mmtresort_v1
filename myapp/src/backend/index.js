@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'; // Import Axios
 import DatePicker from "react-datepicker";
+import { config } from '../config';
 
 function Backend() {
+  const api = config.apiurl;
+  console.log("api",api);
   const [checkindate, setcheckindate] = useState(new Date());
   const [checkoutdate, setcheckoutdate] = useState(new Date());
 
@@ -10,13 +13,12 @@ function Backend() {
   const [isLoading, setIsLoading] = useState(false);
   const [alert, setalert] = useState(false);
   const [error, setError] = useState(null);
-
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
 
       try {
-        const response = await axios.get('https://mmtresort-1.onrender.com/api/data');
+        const response = await axios.get(`${api}/api/data`);
         setData(response.data);
         // const response = await fetch('http://localhost:3001/api/data');
         // setData(await response.json());
@@ -46,17 +48,20 @@ function Backend() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    setalert(true);
     console.log(formData,"react")
     try {
-      const response = await axios.post('https://mmtresort-1.onrender.com/insertData', formData);
+      const response = await axios.post(`${api}/insertData`, formData);
       console.log(response.data.message,"response react");
+      
       // Handle successful insertion (clear form, etc.)
     } catch (error) {
       console.error(error,"erroe react");
       // Handle errors
     } finally {
-      setalert(false);
+      setalert(true);
+      setTimeout(() => {
+       setalert(false);
+      }, 2000);
     }
   };
 
@@ -97,22 +102,24 @@ function Backend() {
                    </div>
                 <div class="col-md-6">
                   <input  onChange={handleChange} id="Date" name="Date"
-                   type="text" class="contact_input" placeholder="Date" /></div>
+                   type="text" class="contact_input" placeholder="Date" required='required' /></div>
 								<div class="col-md-6">
                   <input  onChange={handleChange} id="People" name="People"
-                   type="text" class="contact_input" placeholder="People" required="required" /></div>
+                   type="text" class="contact_input" placeholder="People"  /></div>
 					      <div class="col-md-12">
                   <input  onChange={handleChange} id="Familyorfriends" name="Familyorfriends"
-                   type="text" class="contact_input" placeholder="Family or friends" required="required"/></div>
+                   type="text" class="contact_input" placeholder="Family or friends" /></div>
                 <div class="col-md-12">
                   <input  onChange={handleChange} id="Budget" name="Budget"
-                   type="text" class="contact_input" placeholder="Budget" required="required"/></div>
+                   type="text" class="contact_input" placeholder="Budget" />
+                   </div>
 							</div>
-							{/* <div><textarea class="contact_input contact_textarea" placeholder="Message" required="required"></textarea></div> */}
+							{/* <div><textarea class="contact_input contact_textarea" placeholder="Message" ></textarea></div> */}
 							<button class="contact_button">send message</button>
 						</form>
-            {alert && 
-            <div className={`topfix ${alert ? "topto" :""}`} >Submited successful</div>}
+           
+            <div className={`topfix ${alert ? "topto" :""}`} >Submited successful</div>
+          
 					</div>
       <div>
     </div>

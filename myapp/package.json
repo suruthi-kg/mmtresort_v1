@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/suruthi-kg/mmtresort.git",
+  "homepage": "https://github.com/suruthi-kg/mmtresort_v1.git",
   "name": "myapp",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
     "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.2",
     "react-datepicker": "^6.9.0",
