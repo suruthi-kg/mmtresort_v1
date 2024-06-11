@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/suruthi-kg/mmtresort_v1.git/static/css/main.2682273f.css",
+    "main.js": "/suruthi-kg/mmtresort_v1.git/static/js/main.2d221696.js",
+    "static/js/453.64512fd7.chunk.js": "/suruthi-kg/mmtresort_v1.git/static/js/453.64512fd7.chunk.js",
+    "static/media/i11.jpg": "/suruthi-kg/mmtresort_v1.git/static/media/i11.d28b3c03668724c5252c.jpg",
+    "static/media/hotel-swimming-pool.webp": "/suruthi-kg/mmtresort_v1.git/static/media/hotel-swimming-pool.5af51968b4c2e3cedc5b.webp",
+    "static/media/vdo1.mp4": "/suruthi-kg/mmtresort_v1.git/static/media/vdo1.12f8f6f84eb43c3640f7.mp4",
+    "static/media/i4.jpg": "/suruthi-kg/mmtresort_v1.git/static/media/i4.fbc6eb65883579688ce8.jpg",
+    "static/media/i2.jpg": "/suruthi-kg/mmtresort_v1.git/static/media/i2.862b4b060572b15e191e.jpg",
+    "static/media/icon_1.svg": "/suruthi-kg/mmtresort_v1.git/static/media/icon_1.c9e5e0ec1f4e0e6e36ec230261af65d5.svg",
+    "static/media/icon_2.svg": "/suruthi-kg/mmtresort_v1.git/static/media/icon_2.5936cb074683ae12200e3cb07e583332.svg",
+    "static/media/icon_3.svg": "/suruthi-kg/mmtresort_v1.git/static/media/icon_3.e3663f097f9e4188b17517180be1558a.svg",
+    "index.html": "/suruthi-kg/mmtresort_v1.git/index.html",
+    "main.2682273f.css.map": "/suruthi-kg/mmtresort_v1.git/static/css/main.2682273f.css.map",
+    "main.2d221696.js.map": "/suruthi-kg/mmtresort_v1.git/static/js/main.2d221696.js.map",
+    "453.64512fd7.chunk.js.map": "/suruthi-kg/mmtresort_v1.git/static/js/453.64512fd7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2682273f.css",
+    "static/js/main.2d221696.js"
+  ]
+}
