@@ -1,0 +1,369 @@
+
+
+
+/* .one{
+  min-height: 500px;
+  background-color: rgb(138, 216, 192);
+  font-size: 45px;
+  line-height: 70px;
+  padding: 40px;
+  border-radius: 30px;
+  
+  animation-name: reveal1;
+  animation-duration: 1ms;
+  animation-direction: alternate;
+  animation-timeline: scroll(block nearest); 
+}
+@keyframes reveal1 {
+  0% { transform: scale(.7); }
+  100% {  transform:  scale(1);
+   } 
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');body{
+   font-family: "Roboto", sans-serif;
+   /* background: #ffe092; */
+   /* background: #fff5da; */
+}
+html {
+	scroll-behavior: smooth;
+}
+/* Chrome, Safari, etc. */
+::-webkit-scrollbar {
+	width: 5px; /* Adjust scrollbar width */
+  }
+  
+  ::-webkit-scrollbar-track {
+	background: #f1f1f1; /* Color for the scrollbar track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+	background: rgb(189, 189, 189); /* Color for the scrollbar thumb */
+  }
+  
+
+section{
+   padding: 70px 0;
+}
+.h2tag{
+   font-size: 36px;
+   font-weight: 700;
+   margin-bottom: 25px;
+}
+.para{
+   font-size: 15px;
+}
+.subtit{
+   font-size: 18px;
+   font-weight: 400;
+}
+.banner{
+   background: url("./assets/images/hotel-swimming-pool.webp") no-repeat center;
+   background-size: cover;
+  padding: 100px 0;
+}
+.banner .bg{
+   text-align: center;
+   background: #0000005c;
+   padding:50px 10px;
+   color:#fff;
+   border-radius: 10px;
+}
+.banner button,
+.banner a{
+	text-decoration: none !important;
+    background-color: #637496;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+}
+.banner h1{
+   font-size: 42px;
+   font-weight: 700;
+   margin-bottom: 10px;
+}
+.banner .bantxt{
+	font-family: "Merienda", cursive;
+   font-weight: 500;
+}
+
+.fade{
+  animation: fade 3s  ;
+}
+@keyframes fade {
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.vdo video{
+   border: 10px solid #e8c160;
+   border-radius: 10px;
+   width: 177px;
+}
+
+.threebox .box{
+   text-align: center;
+}
+.threebox .box img{
+   margin-bottom: 10px;
+   height: 50px;
+}
+.threebox .box h5{
+   font-size: 28px;
+   margin-bottom: 10px;
+}
+
+.gallery img{
+ height: 200px;
+ margin-bottom: 24px;
+ border-radius: 15px;
+}
+/* contact  */
+
+.contact_map_container
+{
+	/* padding-right: 42px; */
+	position:relative;
+}
+.contact > .container
+{
+	max-width: 100%;
+	padding-left: 0px;
+	padding-right: 0;
+}
+.contact > .container > .row
+{
+	margin-left: 0;
+	margin-right: 0;
+}
+.contact > .container > .row > div[class^='col']
+{
+	padding-left: 0;
+	padding-right: 0;
+}
+.contact_map
+{
+	width: 100%;
+}
+.map
+{
+	width: 100%;
+}
+.google_map
+{
+	width: 100%;
+}
+.map_container
+{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#map
+{
+	width: 100%;
+	height: calc(100% + 30px);
+}
+.contact_info_box
+{
+	position: absolute;
+	top: 0px;
+	bottom: 0;
+	margin: auto 0;
+	right: 8%;
+	width: 50%;
+	height: 341px;
+	background: #fffdf8;
+	border: solid 2px #637496;
+	box-shadow: 0px 21px 29px rgba(0,0,0,0.35);
+}
+.contact_info_list
+{
+	max-width: 200px;
+}
+.contact_info_list li:not(:last-of-type)
+{
+	margin-bottom: 24px;
+}
+.contact_info_icon
+{
+	width: 29px;
+	height: 29px;
+}
+.contact_info_icon img
+{
+	max-width: 100%;
+}
+.contact_info_text
+{
+	padding-left: 26px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #717171;
+}
+.contact_form_container
+{
+	padding-left: 66px;
+	padding-right: 141px;
+}
+.contact_form
+{
+	margin-top: 61px;
+}
+.contact_row > div[class^='col']
+{
+	margin-bottom: 17px;
+}
+.contact_input
+{
+	width: 100%;
+	height: 52px;
+	padding-left: 25px;
+	border: solid 1px #dadfe5;
+	outline: none;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.contact_input:focus,
+.contact_input:hover
+{
+	border-bottom: solid 2px #da8661;
+}
+.contact_input::-webkit-input-placeholder
+{
+	font-size: 12px !important;
+	font-weight: 500 !important;
+	font-style: italic;
+	color: #7a7a7a !important;
+}
+.contact_input:-moz-placeholder
+{
+	font-size: 12px !important;
+	font-weight: 500 !important;
+	font-style: italic;
+	color: #7a7a7a !important;
+}
+.contact_input::-moz-placeholder
+{
+	font-size: 12px !important;
+	font-weight: 500 !important;
+	font-style: italic;
+	color: #7a7a7a !important;
+} 
+.contact_input:-ms-input-placeholder
+{ 
+	font-size: 12px !important;
+	font-weight: 500 !important;
+	font-style: italic;
+	color: #7a7a7a !important;
+}
+.contact_input::input-placeholder
+{
+	font-size: 12px !important;
+	font-weight: 500 !important;
+	font-style: italic;
+	color: #7a7a7a !important;
+}
+.contact_textarea
+{
+	height: 190px;
+	padding-top: 15px;
+}
+.contact_button
+{
+	position: relative;
+	width: 230px;
+	height: 64px;
+	background: #637496;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	margin-top: 14px;
+	z-index: 1;
+}
+.contact_button::before
+{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	content: '';
+	background: #da8661;
+	z-index: -1;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 400ms ease;
+}
+.contact_button:hover::before
+{
+	width: 100%;
+}
+.topfix{
+    position: fixed;
+    top: -30px;
+    z-index: 2000;
+    background: aliceblue;
+    padding: 10px;
+    font-size: 14px;
+    box-shadow: 0 0 5px 0 #8d8d8d;
+    border-radius: 5px;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    margin: auto;
+	transition: .5s;
+}
+.topto{
+	top: 30px;
+}
+/********************************** */
+
+
+
+@media (max-width:991px){
+	li.nav-item {
+		border-bottom: 1px solid black;
+	}
+	.offcanvas-header{
+		justify-content:flex-end;
+	}
+}
+
+@media (max-width:767px) {
+	section{
+		padding: 40px 0;
+	}
+	.banner .bantxt {
+		padding: 15px 0 5px;
+		font-size: 16px;
+	}
+	.contact_form_container {
+		padding-left: 10px;
+		padding-top: 40px;
+		padding-right: 10px;
+	}
+	
+	.contact_info_box {
+		width: 90%;
+		position: unset;
+		margin: 12px;
+	}
+	.map_container iframe{
+		width: 90%;
+		margin: 12px;
+	}
+}
